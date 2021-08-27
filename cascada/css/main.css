@@ -8,15 +8,6 @@ body{
     font-size: 22px;
 }
 
-div{
-    width: 300px;
-    height: 300px;
-    background-color: goldenrod;
-    padding: 10px;
-    border: 2px solid;
-    margin: 10px;
-}
-
 a{
     color: inherit;
 }
@@ -62,6 +53,128 @@ h1.tipografia{
     font-weight: 400;
     font-style: italic;
 }
+
+/* Position static, relative, absolute */
+
+div.static{
+    width: 300px;
+    height: 150px;
+    border:0;
+    padding: 0;
+    margin:0;
+    background-color: purple;
+    position: static;
+}
+
+div.relative{
+    width: 300px;
+    height: 150px;
+    background-color: goldenrod;
+    border:0;
+    padding: 0;
+    margin-bottom:90px;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+div.absolute{
+    width: 300px;
+    height: 150px;
+    background-color:mediumturquoise ;
+    border:0;
+    padding: 0;
+    margin:0;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+/* Position fixed */
+
+header{
+    background-color: grey;
+    padding: 20px 0;
+    border:0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    box-sizing: inherit;
+    opacity: .9;
+    z-index: 3;
+}
+
+
+/* Z-index */
+
+div.uno{
+    width: 300px;
+    border: 0;
+    background-color: goldenrod;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+}
+
+div.dos{
+    width: 300px;
+    border:0;
+    background-color: purple;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* desbordamiento */
+
+div.desbordamiento{
+    background-color: lightgray;
+    padding: 10px;
+    height: 150px;
+    width: 100%;
+    border: 0;
+    overflow: auto;
+}
+
+
+/* Elementos flotantes y despejar elementos flotantes */
+
+main{
+    height: auto;
+    padding: 10px;
+    border: 0;
+    background-color: lightgray;
+}
+
+section{
+    height: 300px;
+    width: 32.8%;
+    background-color: gray;
+    float: left;
+    overflow: auto;
+}
+
+section:nth-of-type(2){
+    margin: 1px;
+    padding: 10px;
+}
+
+section img{
+    width: 60px;
+    height: 60px;
+    float:right;
+}
+
+section p{
+    font-size: 15px;
+    color:white;
+}
+
+main div.clearfix{
+    clear: both;
+}
+
 
 
 /* Especificidad */
