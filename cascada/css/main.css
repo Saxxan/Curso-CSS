@@ -271,6 +271,77 @@ img#gatito:hover{
     transform: rotateY(45deg);
 }
 
+
+/* Transformaciones 3D */
+
+.trans{
+    width: 530px;
+    height: 190px;
+    margin: 0 auto 10px;
+    border: 1px black solid;
+    padding: 10px;
+    perspective: 800px;
+}
+
+.trans div{
+    float:left;
+    width: 85px;
+    height: 130px;
+    margin: 10px 20px;
+    border: 1px red solid;
+    padding: 5px;
+    transition: all 2s ease-in-out;
+}
+
+#translateX:hover{
+    transform: translateX(20px);
+}
+
+#translateY:hover{
+    transform: translateY(20px);
+}
+
+#translateZ:hover{
+    transform: translateZ(200px);
+}
+
+#translate3D:hover{
+    transform: translate3d(20px, 20px, 200px);
+}
+
+#scaleX:hover{
+    transform: scaleX(1.5);
+}
+
+#scaleY:hover{
+    transform: scaleY(1.5);
+}
+
+#scaleZ:hover{
+    transform: scaleZ(-2);
+}
+
+#scale3D:hover{
+    transform: scale3d(1.5, .5, 2);
+}
+
+#rotateX:hover{
+    transform: rotateX(180deg);
+}
+
+#rotateY:hover{
+    transform: rotateY(180deg);
+}
+
+#rotateZ:hover{
+    transform: rotateZ(-45deg);
+}
+
+#rotate3D:hover{
+    transform: rotate3D(1, 1, 1, 60deg);
+}
+
+
 /* Especificidad */
 
 h3 p.texto ul#listado li a{
