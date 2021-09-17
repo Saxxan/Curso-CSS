@@ -470,10 +470,10 @@ img#gatito:hover{
 
 /* Flexbox */
 
-.contenedor{
-    height: 100%;
-    width: 100%;
+.contenedorflex{
+    height: 500px;
     display: flex;
+    flex-direction: column;
 }
 
 .elemento{
@@ -482,6 +482,42 @@ img#gatito:hover{
     background-color: seagreen;
     margin: 2px;
     width: 99%;
+    flex-basis: 50px;
+}
+
+/* Ejercicio de ejemplo FLEXBOX */
+
+.flexex{
+    font-family: sans-serif;
+    width: 600px;
+    height: auto;
+}
+
+.flexex > *{
+    padding: 20px;
+}
+
+.flexex header{
+    background-color: lightcyan;
+    margin-bottom: 10px;
+}
+
+.flexex article{
+    background-color: lightsalmon;
+    margin-bottom: 10px;
+}
+
+.flexex section{
+    background-color: lightgreen;
+    margin-bottom: 10px;
+}
+
+.flexex footer{
+    background-color: lightskyblue;
+}
+
+.flexex ul{
+    padding-left: 10px;
 }
 
 /* Especificidad */
